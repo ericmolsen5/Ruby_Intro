@@ -1,0 +1,16 @@
+Question:
+
+What does the following error message tell you?
+
+(pasted from course)
+
+SyntaxError: (irb):2: syntax error, unexpected ')', expecting '}'
+  from /usr/local/rvm/rubies/ruby-2.0.0-rc2/bin/irb:16:in `<main>'
+
+Answer without looking:
+
+Without looking at the solution, I would suspect that the code was defining a hash-set
+or other structure which utlizes curly-braces (iterator, loop, etc) and 
+encountered a closing parenthesis instead.
+
+This could just be an issue of simply forgetting to close the hash-set
