@@ -1,0 +1,8 @@
+I'm assuming that what an expression evaluates to is synonomous with what the
+return value of the expression is.
+
+1. returns int 2
+2. returns nil, prints 2 (a little weird to me)
+3. returns String "Joe"
+4. returns String "four"
+5. returns nil, prints "nothing" (also a little weird to me)

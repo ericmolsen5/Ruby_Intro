@@ -1,0 +1,15 @@
+What does the following error message tell you?
+
+ArgumentError: wrong number of arguments (1 for 2)
+  from (irb):1:in `calculate_product'
+  from (irb):4
+  from /Users/username/.rvm/rubies/ruby-2.0.0-p353/bin/irb:12:in `<main>'
+
+Answer (without looking):
+
+I would assume that a method was called which takes two parameters, but only one was
+provided by the calling method. 
+
+You could fix this by providing a default parameter value...although I'd be careful 
+with this as it's an easy way to creep into run-time bugs. Remember, the compiler
+is your friend and he smacks you out of love and concern.
