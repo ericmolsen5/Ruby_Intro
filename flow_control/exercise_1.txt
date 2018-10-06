@@ -1,0 +1,28 @@
+Write down whether the following expressions return true or false. 
+Then type the expressions into irb to see the results.
+
+1. 1. (32 * 4) >= 129
+    False --> 128 >= 129
+
+2. 2. false != !true
+    False --> false != !true --> false != false
+
+3. 3. true == 4
+    False (booleans can't equate to integers, although in C and C++ this would equate to true)
+
+4. false == (847 == '847')
+    True, since the failed comparison operator generates false which then equals the left-most false.
+
+5. (!true || (!(100 / 5) == 20) || ((328 / 4) == 82)) || false
+
+    Reminder:
+      <=, <, >, >= - Comparison
+      ==, != - Equality
+      && - Logical AND
+      || - Logical OR
+
+  (!true || (!(100 / 5) == 20) || ((328 / 4) == 82)) || false <-- transposed
+  (false || (!(20) == 20)) || ((82) == 82) || false <-- evaluated negation and inner parenthetical algebra expressions
+  (false || false  || true || false)
+
+  Answer is true
