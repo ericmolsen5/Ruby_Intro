@@ -1,0 +1,13 @@
+What does the each method in the following program return after it is finished executing?
+
+x = [1, 2, 3, 4, 5]
+x.each do |a|
+  a + 1
+end
+
+This method should return the values 2, 3, 4, 5, 6 since iterators begin with an index of 1 rather than 0.
+
+Oops. Incorrect answer.
+
+Variable 'a' does not print. If launched in the irb, the each iterator method will return its iterated object.
+This is what iterators will always do in Ruby.
