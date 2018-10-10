@@ -1,0 +1,22 @@
+What is the value of a, b, and c in the following program?
+
+string = "Welcome to America!"
+a = string[6]
+b = string[11]
+c = string[19]
+
+It appears that we are creating single character strings. I'm assuming that all
+string references behave like the C language and are actually integer arrays
+under the hood with a null value as the last character. Let's see:
+
+**before irb check**
+
+a = "e" 
+b = "A"
+c = This should be Ruby's String version of an index_out_of_bounds exception. 
+
+**answer from irb**
+Correct, except Ruby doesn't halt the program with an error/exception, 
+it just returns nil if the index is out of bounds.
+
+I'm used to a harsher syntax checker (Java).

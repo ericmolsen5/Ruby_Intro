@@ -1,0 +1,17 @@
+What does each method return in the following example?
+
+arr = [15, 7, 18, 5, 12, 8, 5, 1]
+
+1. arr.index(5)
+
+2. arr.index[5]
+
+3. arr[5]
+
+*************
+
+1. Returns the index of the first occurence of the integer 5. Answer: index 3
+
+2. Generates an NoMEthodError. I believe this is looking for a single element array of 5.
+
+3. This returns the value at index 5 which is 8

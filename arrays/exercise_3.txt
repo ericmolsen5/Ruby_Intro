@@ -1,0 +1,10 @@
+How do you return the word "example" from the following array?
+
+arr = [["test", "hello", "world"],["example", "mem"]]
+
+**before looking at solution**
+- The easiest way that I can think of would be an array index reference of [1][0]
+- We could also use an array search method, but since it's a 2D array, this might become complicated.
+
+**after looking**
+- Ahh, I forgot, arr.last.first would also work. There are many ways to do things in Ruby.
