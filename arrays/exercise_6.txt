@@ -1,0 +1,26 @@
+You run the following code...
+
+names = ['bob', 'joe', 'susan', 'margaret']
+names['margaret'] = 'jody'
+
+...and get the following error message:
+
+TypeError: no implicit conversion of String into Integer
+  from (irb):2:in `[]='
+  from (irb):2
+  from /Users/username/.rvm/rubies/ruby-2.0.0-p353/bin/irb:12:in `<main>'
+
+**Pre-check answer**
+
+An array can only accept integers as index values. Ruby is trying to implicitly convert
+the string value to a single digit, but a string is an integer array under the hood.
+
+This would be appropriate for a hash set where key values are allowed to be strings, but
+not for an array. An array is one contiguous block of memory at run time and the index
+is the computer's queue on where to jump to within that block.
+
+Give the second line an integer to fix this:
+change:
+names['margaret'] = 'jody'
+to
+names[3] = 'jody' or use an array library call to locate this value in a large array
